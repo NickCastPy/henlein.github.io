@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='/styles/style.css') }}"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="static/styles/style.css"><link>
+    <title>Henlein</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1 class="logo">Henlein</h1>
+        <label class="nav__ham", onclick="ham_click()">
+          <span class="bar first"></span>
+          <span class="bar second"></span>
+        </label>
+        <ul class="item__cont">
+          <li class="item"><a href="#main"class="item__link">Main</a></li>
+          <li class="item"><a href="#watches"class="item__link">Watches</a></li>
+          <li class="item"><a href="#identity"class="item__link">Identity</a></li>
+          <li class="item"><a href="#boutiques" class="item__link">Boutiques</a></li>
+        </ul>
+      </nav>
+    <!-- Body -->
+    <div class="body__container">
+    <!-- Header -->
+    <div class="head" id="main">
+        <div class="inner__head">
+            <h1 class="title">New Dark Collection</h1>
+            <button class="discover__btn">Discover</button>
+        </div>
+    </div>
+    <!-- Identity -->
+    <div class="identity__div" id="identity">
+        <div class="identity__txt">
+            <h1 class="identity__h1">Identity</h1>
+            <p class="identity__p">We sincerely consider that quality is more important than quantity. Our watches are made with scrupulous attention, each part being high-precisionly constructed by hand. Explore a variety of watches that can suit any wrist. </p>
+            <button class="identity__btn">Configure your watch</button>
+        </div>
+        
+
+        <div class="identity__prods"id="watches">
+            <!-- Products -->
+            <div class="prod__outer">
+                <div class="prod__inner">
+                    <div style="background: url(static/img/overseas.svg) no-repeat; background-size: cover;" class="prod__img">
+                        <img src="static/img/watch2.webp"class='watch__img'>
+                    </div>
+                    <div class="prod__name">
+                        <h1 class="prod__name__txt">Overseas</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prod__outer">
+                <div class="prod__inner">
+                    <div style="background: url(static/img/malte.svg) no-repeat; background-size: cover;" class="prod__img">
+                        <img src="static/img/watch3.webp"class='watch__img'>
+                    </div>
+                    <div class="prod__name">
+                        <h1 class="prod__name__txt">Malte</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prod__outer">
+                <div class="prod__inner">
+                    <div style="background: url(static/img/traditionnelle.svg) no-repeat; background-size: cover;" class="prod__img">
+                        <img src="static/img/watch1.webp"class='watch__img'>
+                    </div>
+                    <div class="prod__name">
+                        <h1 class="prod__name__txt">Historical</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- End -->
+        </div>
+    </div>
+    <!-- <script src="{{ url_for('static', filename='js/scripts.js') }}"></script> -->
+
+    <!-- Boutiques -->
+
+    <div class="cont__outer">
+        <div class="cont__inner">
+            <div class="cont__div">
+                <div class="cont__desc__d">
+                    <h1 class="cont__txt">Golf</h1>
+                    <p class="cont__desc">We've been involved in golf for more than 40 years now. Our brand has since grown and helped players. We also regularly organize various professional competitions.</p>
+                    <button class="cont__btn">See More</button>
+                </div>
+                <div class="cont__img__d">
+                    <img class="cont__img"src="static/img/golf.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contribution -->
+
+    <div class="bout__outer"id="boutiques">
+        <div class="bout__inner">
+            <div class="bout__div">
+                <div class="bout__desc__d">
+                    <h1 class="bout__txt">Visit Us</h1>
+                    <p class="bout__desc">Discover our locations around the world and experience the unique craftsmanship of watchmaking in person. </p>
+                    <button class="bout__btn">See Locations</button>
+                </div>
+                <div class="bout__img__d">
+                    <img class="bout__img"src="static/img/visist_marble.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features -->
+    <div class="features__outer">
+        <div class="features__inner">
+            <div class="features__div">
+                <img src="static/img/watch6.webp" class="features__img">
+                <div class="hotspot strap" text="Strap"></div>
+                <div class="hotspot hands" text="Hands"></div>
+                <div class="hotspot crystal" text="Crystal"></div>
+                <div class="hotspot case" text="Case"></div>
+            </div>
+            <div class="features__div2">
+                <div class="features__desc1 f__desc">
+                    <h1 class="feat__title">strap</h1>
+                    <p>The strap secures the watch to your wrist. Henlein watches' straps can range from golden to ostrich, crocodile, alligator and more.</p>
+                </div>
+                <div class="features__desc2 f__desc">
+                    <h1 class="feat__title">hands</h1>
+                    <p>The hands move over the dial itself, pointing at the hour markers to indicate the time. They are mostly made of the main material of the watch.</p>
+                </div>
+                <div class="features__desc3 f__desc">
+                    <h1 class="feat__title">case</h1>
+                    <p>Case is the housing of the watch. Our brand exclusively uses gold, silver, platinum and rhodium to assemble cases.</p>
+                </div>
+                <div class="features__desc4 f__desc">
+                    <h1 class="feat__title">crystal</h1>
+                    <p>The clear portion of the watch face that protects the dial, hands, etc. The crystals we produce are made of glass or synthetic saphire.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+
+    <footer class="footer__outer">
+        <div class="footer__inner">
+            <div class="footer__div">
+                <div class="footer__col">
+                    <h1 class="footer__title">Henlein</h1>
+                    <ul>
+                        <li><a href="#">Identity</a></li>
+                        <li><a href="#">Watches</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">partnership</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h1 class="footer__txt">get help</h1>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h1 class="footer__txt">follow us</h1>
+                    <div class="footer__links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+</div>
+    <script src="static/js/scripts.js"></script>
+</body>
+</html>
